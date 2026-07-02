@@ -1,45 +1,246 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>App Policy</title>
-	<style type="text/css">
-		body{
-			line-height: 1.5;
-			font-size: 18px;
-		}
-	</style>
+<meta charset="utf-8">
+<title>Chính Sách Ứng Dụng — App Policy | Huỳnh Long Hồ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chính sách ứng dụng — App Policy. Cam kết về quyền riêng tư, bảo mật dữ liệu và trải nghiệm người dùng.">
+<link rel="icon" href="img/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1020;
+  --bg-soft:#101731;
+  --card:#141d3b;
+  --card-hover:#182246;
+  --line:rgba(139,168,255,.14);
+  --text:#e8edfb;
+  --muted:#9aa7cc;
+  --accent:#5b8cff;
+  --accent-2:#38d0c4;
+  --accent-soft:rgba(91,140,255,.14);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Be Vietnam Pro',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+::selection{background:var(--accent);color:#fff}
+
+body[data-lang="vi"] [lang="en"]{display:none !important}
+body[data-lang="en"] [lang="vi"]{display:none !important}
+
+a{color:var(--accent);text-decoration:none}
+.container{max-width:860px;margin:0 auto;padding:0 24px}
+
+/* ---- nav ---- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  backdrop-filter:blur(14px);
+  background:rgba(11,16,32,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1080px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;gap:20px;
+}
+.brand{font-weight:800;font-size:1.05rem;color:var(--text);letter-spacing:.3px}
+.brand span{color:var(--accent)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.back-link{color:var(--muted);font-size:.9rem;font-weight:500;transition:color .2s}
+.back-link:hover{color:var(--text)}
+.lang-switch{
+  display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;
+  font-size:.78rem;font-weight:700;
+}
+.lang-switch button{
+  border:0;background:transparent;color:var(--muted);
+  padding:6px 14px;cursor:pointer;font:inherit;transition:.2s;
+}
+.lang-switch button.active{background:var(--accent);color:#fff}
+
+/* ---- header ---- */
+header{
+  padding:150px 0 70px;text-align:center;
+  background:
+    radial-gradient(600px 320px at 50% 0%,rgba(91,140,255,.15),transparent 70%),
+    var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.kicker{
+  font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent-2);
+  letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:14px;
+}
+header h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.5px;margin-bottom:16px}
+header .intro{color:var(--muted);max-width:640px;margin:0 auto;font-size:1.02rem}
+
+/* ---- policy cards ---- */
+main{padding:64px 0 80px}
+.policy-list{display:flex;flex-direction:column;gap:18px}
+.policy-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;display:flex;gap:20px;align-items:flex-start;
+  transition:.25s;
+}
+.policy-card:hover{border-color:rgba(91,140,255,.4);background:var(--card-hover)}
+.policy-card .ic{
+  width:46px;height:46px;flex:0 0 46px;border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;font-size:1.25rem;
+  box-shadow:0 8px 20px rgba(91,140,255,.3);
+}
+.policy-card h2{font-size:1.05rem;font-weight:700;margin-bottom:6px}
+.policy-card p{color:var(--muted);font-size:.95rem}
+
+.closing{
+  margin-top:36px;padding:26px 28px;text-align:center;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);
+  color:var(--muted);font-size:.98rem;
+}
+.contact-line{margin-top:14px;font-size:.9rem}
+
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
+footer b{color:var(--text)}
+
+@media(max-width:640px){
+  header{padding:130px 0 54px}
+  .policy-card{flex-direction:column;gap:14px}
+  main{padding:48px 0 60px}
+}
+</style>
 </head>
-<body>
-	<div style="margin:auto;max-width: 1200px;">
-		<h2 style="text-align: center; margin-top: 30px;margin-bottom: 30px;">Chính Sách Ứng Dụng </h2>
-		<p>Chúng tôi cam kết cung cấp một trải nghiệm ứng dụng an toàn, minh bạch và hiệu quả cho tất cả người dùng của mình. Dưới đây là các chính sách chính của chúng tôi:</p>
-		<ul>
-			<li>
-				<strong>Quyền Riêng Tư và Bảo Mật Dữ Liệu:</strong> Chúng tôi tôn trọng quyền riêng tư của bạn. Chúng tôi chỉ thu thập và sử dụng thông tin cá nhân theo cách minh bạch và chỉ cho những mục đích đã được thông báo. Mọi thông tin cá nhân đều được bảo vệ bằng các biện pháp bảo mật tiên tiến.
-			</li>
-			<li>
-				<strong>Độ Chính Xác của Thông Tin:</strong> Chúng tôi cam kết cung cấp thông tin chính xác và cập nhật. Mọi chi tiết về giá cả, vị trí, và các đặc điểm khác của bất động sản được kiểm tra và xác nhận trước khi đăng tải.
-			</li>
-			<li>
-				<strong>Tuân Thủ Pháp Luật:</strong> Chúng tôi hoạt động theo đúng các quy định và luật lệ liên quan đến bất động sản tại mỗi khu vực mà chúng tôi phục vụ.
-			</li>
-			<li>
-				<strong>Trải Nghiệm Người Dùng:</strong> Giao diện người dùng của chúng tôi được thiết kế để dễ dàng sử dụng, mang lại trải nghiệm người dùng mượt mà và trực quan.
-			</li>
-			<li>
-				<strong>Hiệu Suất Ứng Dụng:</strong> Chúng tôi cam kết cung cấp một ứng dụng ổn định và hiệu quả, với thời gian phản hồi nhanh chóng và ít lỗi.
-			</li>
-			<li>
-				<strong>Nội Dung và Quảng Cáo:</strong> Mọi nội dung và quảng cáo trong ứng dụng đều tuân thủ chính sách nội dung. Chúng tôi không chấp nhận bất kỳ hình thức quảng cáo gây hiểu nhầm hoặc không phù hợp.
-			</li>
-			<li>
-				<strong>Hỗ Trợ Khách Hàng:</strong> Chúng tôi cung cấp hỗ trợ khách hàng toàn diện, bao gồm hướng dẫn sử dụng, câu hỏi thường gặp và dịch vụ hỗ trợ trực tiếp khi cần thiết.
-			</li>
-		</ul>
-		<p>Chúng tôi tin tưởng rằng với các chính sách này, Chúng tôi sẽ đáp ứng mọi yêu cầu và mang lại giá trị tốt nhất cho người dùng của mình.</p>
-	</div>
+<body data-lang="vi">
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Huỳnh Long <span>Hồ</span></a>
+    <div class="nav-right">
+      <a class="back-link" href="index.html">← <span lang="vi">Về trang chủ</span><span lang="en">Back to home</span></a>
+      <div class="lang-switch">
+        <button id="btnVi" onclick="setLang('vi')">VI</button>
+        <button id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <span class="kicker">App Policy</span>
+    <h1><span lang="vi">Chính Sách Ứng Dụng</span><span lang="en">Application Policy</span></h1>
+    <p class="intro">
+      <span lang="vi">Chúng tôi cam kết cung cấp một trải nghiệm ứng dụng an toàn, minh bạch và hiệu quả cho tất cả người dùng của mình. Dưới đây là các chính sách chính của chúng tôi:</span>
+      <span lang="en">We are committed to providing a safe, transparent, and efficient application experience for all of our users. Below are our key policies:</span>
+    </p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="policy-list">
+
+      <div class="policy-card">
+        <div class="ic">🔒</div>
+        <div>
+          <h2><span lang="vi">Quyền Riêng Tư và Bảo Mật Dữ Liệu</span><span lang="en">Privacy &amp; Data Security</span></h2>
+          <p lang="vi">Chúng tôi tôn trọng quyền riêng tư của bạn. Chúng tôi chỉ thu thập và sử dụng thông tin cá nhân theo cách minh bạch và chỉ cho những mục đích đã được thông báo. Mọi thông tin cá nhân đều được bảo vệ bằng các biện pháp bảo mật tiên tiến.</p>
+          <p lang="en">We respect your privacy. We only collect and use personal information in a transparent manner and solely for the purposes that have been disclosed. All personal information is protected with advanced security measures.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">✅</div>
+        <div>
+          <h2><span lang="vi">Độ Chính Xác của Thông Tin</span><span lang="en">Accuracy of Information</span></h2>
+          <p lang="vi">Chúng tôi cam kết cung cấp thông tin chính xác và cập nhật. Mọi chi tiết về giá cả, vị trí, và các đặc điểm khác của bất động sản được kiểm tra và xác nhận trước khi đăng tải.</p>
+          <p lang="en">We are committed to providing accurate and up-to-date information. All details regarding pricing, location, and other property characteristics are verified and confirmed before being published.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">⚖️</div>
+        <div>
+          <h2><span lang="vi">Tuân Thủ Pháp Luật</span><span lang="en">Legal Compliance</span></h2>
+          <p lang="vi">Chúng tôi hoạt động theo đúng các quy định và luật lệ liên quan đến bất động sản tại mỗi khu vực mà chúng tôi phục vụ.</p>
+          <p lang="en">We operate in full compliance with the regulations and laws related to real estate in every region we serve.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">✨</div>
+        <div>
+          <h2><span lang="vi">Trải Nghiệm Người Dùng</span><span lang="en">User Experience</span></h2>
+          <p lang="vi">Giao diện người dùng của chúng tôi được thiết kế để dễ dàng sử dụng, mang lại trải nghiệm người dùng mượt mà và trực quan.</p>
+          <p lang="en">Our user interface is designed to be easy to use, delivering a smooth and intuitive user experience.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">⚡</div>
+        <div>
+          <h2><span lang="vi">Hiệu Suất Ứng Dụng</span><span lang="en">Application Performance</span></h2>
+          <p lang="vi">Chúng tôi cam kết cung cấp một ứng dụng ổn định và hiệu quả, với thời gian phản hồi nhanh chóng và ít lỗi.</p>
+          <p lang="en">We are committed to providing a stable and efficient application, with fast response times and minimal errors.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">📢</div>
+        <div>
+          <h2><span lang="vi">Nội Dung và Quảng Cáo</span><span lang="en">Content &amp; Advertising</span></h2>
+          <p lang="vi">Mọi nội dung và quảng cáo trong ứng dụng đều tuân thủ chính sách nội dung. Chúng tôi không chấp nhận bất kỳ hình thức quảng cáo gây hiểu nhầm hoặc không phù hợp.</p>
+          <p lang="en">All content and advertising within the application complies with our content policy. We do not accept any form of misleading or inappropriate advertising.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">💬</div>
+        <div>
+          <h2><span lang="vi">Hỗ Trợ Khách Hàng</span><span lang="en">Customer Support</span></h2>
+          <p lang="vi">Chúng tôi cung cấp hỗ trợ khách hàng toàn diện, bao gồm hướng dẫn sử dụng, câu hỏi thường gặp và dịch vụ hỗ trợ trực tiếp khi cần thiết.</p>
+          <p lang="en">We provide comprehensive customer support, including user guides, frequently asked questions, and direct support services when needed.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="closing">
+      <span lang="vi">Chúng tôi tin tưởng rằng với các chính sách này, chúng tôi sẽ đáp ứng mọi yêu cầu và mang lại giá trị tốt nhất cho người dùng của mình.</span>
+      <span lang="en">We believe that with these policies, we will meet every requirement and deliver the best value to our users.</span>
+      <div class="contact-line">
+        <span lang="vi">Mọi thắc mắc xin liên hệ:</span>
+        <span lang="en">For any inquiries, please contact:</span>
+        <a href="mailto:ho.huynh@omn1solution.com">ho.huynh@omn1solution.com</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 <b>Huỳnh Long Hồ</b> ·
+    <a href="index.html"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+  </div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang;
+  document.getElementById('btnVi').classList.toggle('active', lang==='vi');
+  document.getElementById('btnEn').classList.toggle('active', lang==='en');
+  try{ localStorage.setItem('lang', lang); }catch(e){}
+}
+setLang((function(){
+  try{ var s = localStorage.getItem('lang'); if(s==='vi'||s==='en') return s; }catch(e){}
+  return (navigator.language||'vi').toLowerCase().startsWith('vi') ? 'vi' : 'en';
+})());
+</script>
 </body>
 </html>
