@@ -185,14 +185,19 @@ nav{
   content:"";position:absolute;top:-40px;right:-40px;width:120px;height:120px;
   border-radius:50%;background:radial-gradient(circle,rgba(91,140,255,.22),transparent 70%);
 }
-.cert-card .medal{
-  width:46px;height:46px;border-radius:13px;display:grid;place-items:center;
-  background:linear-gradient(135deg,var(--accent),var(--accent-2));
-  font-size:1.25rem;margin-bottom:18px;box-shadow:0 8px 20px rgba(91,140,255,.35);
+.cert-card .badge-img{
+  width:130px;height:auto;margin:0 auto 20px;display:block;
+  filter:drop-shadow(0 10px 24px rgba(0,0,0,.45));
+  transition:transform .25s;
 }
+.cert-card:hover .badge-img{transform:scale(1.06)}
+.cert-card{text-align:center}
 .cert-card h3{font-size:1rem;font-weight:700;line-height:1.45;margin-bottom:10px}
 .cert-card .year{
-  font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--accent-2);
+  font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--accent-2);display:block;
+}
+.cert-verify{
+  text-align:center;margin-top:28px;color:var(--muted);font-size:.88rem;
 }
 
 /* ---- experience timeline ---- */
@@ -427,21 +432,26 @@ footer b{color:var(--text)}
     </div>
     <div class="cert-grid">
       <div class="cert-card reveal">
-        <div class="medal">🏅</div>
-        <h3>Salesforce Certified Platform Developer</h3>
-        <span class="year">2025</span>
+        <img class="badge-img" src="img/cert-platform-developer.png" alt="Salesforce Certified Platform Developer I" loading="lazy">
+        <h3>Salesforce Certified Platform Developer I</h3>
+        <span class="year">25/05/2025</span>
       </div>
       <div class="cert-card reveal">
-        <div class="medal">🏅</div>
+        <img class="badge-img" src="img/cert-data-architect.png" alt="Salesforce Certified Platform Data Architect" loading="lazy">
         <h3>Salesforce Certified Platform Data Architect</h3>
-        <span class="year">2025</span>
+        <span class="year">29/06/2025</span>
       </div>
       <div class="cert-card reveal">
-        <div class="medal">🏅</div>
+        <img class="badge-img" src="img/cert-sharing-visibility-architect.png" alt="Salesforce Certified Platform Sharing and Visibility Architect" loading="lazy">
         <h3>Salesforce Certified Platform Sharing and Visibility Architect</h3>
-        <span class="year">2026</span>
+        <span class="year">24/05/2026</span>
       </div>
     </div>
+    <p class="cert-verify reveal">
+      <span lang="vi">✔ Xác thực chứng chỉ tại</span>
+      <span lang="en">✔ Verify credentials at</span>
+      <a href="https://trailhead.salesforce.com/credentials/verification" target="_blank" rel="noopener">Salesforce Credential Verification</a>
+    </p>
   </div>
 </section>
 
