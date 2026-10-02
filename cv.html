@@ -284,5 +284,14 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
   <footer><span>Huỳnh Long Hồ — Salesforce Developer / Tech Lead</span><span>2 / 2</span></footer>
 </div>
 
+<script>
+// Browsers use document.title as the default PDF file name: swap in an ASCII name while printing.
+(function(){
+  var pageTitle = document.title;
+  var fileName = 'HuynhLongHo_CV_Salesforce_Developer_TechLead';
+  window.addEventListener('beforeprint', function(){ document.title = fileName; });
+  window.addEventListener('afterprint', function(){ document.title = pageTitle; });
+})();
+</script>
 </body>
 </html>
