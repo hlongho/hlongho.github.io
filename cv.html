@@ -83,6 +83,15 @@ strong{color:var(--ink);font-weight:600}
 .stack{font-size:8.4pt;color:var(--muted);margin-top:2px}
 .stack b{color:var(--text);font-weight:600}
 
+/* employer */
+.employer{display:flex;align-items:baseline;gap:10px;padding:7px 12px;margin:2px 0 8px;border-radius:8px;background:var(--accent-soft)}
+.employer h3{font-size:11.5pt;font-weight:800;color:var(--ink)}
+.employer .title{font-weight:600;color:var(--accent)}
+.employer .time{margin-left:auto;font-weight:600;color:var(--ink);font-size:9pt;white-space:nowrap}
+.emp-note{margin:0 0 9px 0;padding-left:15px}
+.emp-note li::marker{color:var(--accent)}
+.job{padding-left:10px;border-left:2px solid var(--line)}
+
 /* certs / edu */
 .rows .row{display:flex;gap:10px;align-items:baseline;padding:3px 0;border-bottom:1px dashed var(--line)}
 .rows .row:last-child{border-bottom:0}
@@ -138,14 +147,14 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
   </header>
 
   <h2>Professional Summary</h2>
-  <p>Salesforce Developer and Tech Lead with <strong>3+ years</strong> delivering end-to-end Salesforce solutions for B2B clients in Manufacturing, Retail, Real Estate, Finance &amp; Banking and Education. <strong>Led 3 projects</strong> and contributed to 4 more, helping clients gain an average <strong>30% in operational efficiency</strong> after go-live.</p>
-  <p>Strong in <strong>Sales Cloud, Service Cloud, Apex and LWC</strong>. Comfortable owning the full delivery cycle inside Scrum teams: client discovery, solution architecture, Technical Design Documents, system integration, hands-on development and release.</p>
+  <p>Salesforce Developer and Tech Lead with <strong>5+ years</strong> in software development, including <strong>3+ years</strong> delivering end-to-end Salesforce solutions for B2B clients in Manufacturing, Retail, Real Estate, Finance &amp; Banking and Education. <strong>Led 3 projects</strong> and contributed to 4 more at Omn1 Solution, after starting as a Mobile Developer at TMA Solutions.</p>
+  <p>Strong in <strong>Sales Cloud, Service Cloud, Apex and LWC</strong>. As Tech Lead in Scrum teams, I work weekly with the PM and team leads to align sprint goals, estimate and review, while owning the delivery cycle from client discovery, solution architecture and Technical Design Documents to integration, hands-on development and release.</p>
 
   <div class="figures">
-    <div class="fig"><b>3+</b><span>Years on Salesforce</span></div>
+    <div class="fig"><b>5+</b><span>Years in software</span></div>
     <div class="fig"><b>7</b><span>End-to-end projects</span></div>
     <div class="fig"><b>3</b><span>Salesforce certifications</span></div>
-    <div class="fig"><b>30%</b><span>Avg. efficiency gain</span></div>
+    <div class="fig"><b>3</b><span>Projects led as Tech Lead</span></div>
   </div>
 
   <h2>Core Skills</h2>
@@ -153,17 +162,21 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
     <dt>Salesforce</dt><dd>Sales Cloud, Service Cloud, Experience Cloud, Marketing Cloud integration, Flow, Permission Sets &amp; sharing model, Reports &amp; Dashboards</dd>
     <dt>Development</dt><dd>Apex, Apex Test Classes, Lightning Web Components (LWC), mobile apps (iOS/Android/iPad), Heroku APIs</dd>
     <dt>Integration &amp; data</dt><dd>REST/SOAP API, ERP integration, payment gateway (Payoo), Omni-Channel (Live Chat, WhatsApp, Zalo, Facebook), AWS S3, Firebase, data migration</dd>
-    <dt>Solution &amp; delivery</dt><dd>Solution Architecture, Technical Design Documents (TDD), interface mapping, client workshops, Scrum, team leadership, user training</dd>
+    <dt>Solution &amp; delivery</dt><dd>Solution Architecture, Technical Design Documents (TDD), interface mapping, client workshops, Scrum (weekly sprint goals, estimation and review with PM), team leadership, mentoring &amp; code review, user training</dd>
   </dl>
 
   <h2>Professional Experience</h2>
+  <div class="employer"><h3>Omn1 Solution</h3><span class="title">Salesforce / Mobile Developer → Salesforce Developer → Tech Lead</span><span class="time">2023 – Present</span></div>
+  <ul class="emp-note">
+    <li>Delivered 7 Salesforce projects for Omn1 Solution clients; promoted to Tech Lead, aligning sprint goals, estimates and reviews weekly with the PM and team leads</li>
+    <li>Mentor team members and review code to keep quality consistent across the team</li>
+  </ul>
 
   <div class="job">
     <div class="job-head"><h3>Đồng Tiến Paper — Salesforce CRM</h3><span class="tag lead">Tech Lead</span><span class="time">2026</span></div>
     <p class="ctx">Salesforce CRM implementation digitizing business processes and integrating with the client's existing systems.</p>
     <ul>
-      <li>Ran client discovery sessions and finalized business processes with stakeholders</li>
-      <li>Proposed the solution and wrote the Technical Design Document (TDD)</li>
+      <li><strong>Led a team of 3 developers</strong>; ran client discovery, finalized business processes, proposed the solution and wrote the TDD</li>
       <li>Designed and built the integration flows; worked directly with the client's team throughout integration</li>
       <li>Developed modules hands-on alongside the development team</li>
     </ul>
@@ -174,19 +187,8 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
     <p class="ctx">Premium co-working/membership brand managing the full member lifecycle on Salesforce.</p>
     <ul>
       <li>Analyzed requirements and built the Solution Architecture for a multi-tier Membership CRM</li>
-      <li>Wrote the TDD and Solution Design for Lead → Opportunity → Application → Approval → Payment → Membership</li>
-      <li>Led technical reviews for the team to keep quality and architecture consistent</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-head"><h3>Trung Nguyên — Franchisee Platform</h3><span class="tag lead">Tech Lead</span><span class="time">11/2025</span></div>
-    <p class="ctx">Digitized the nationwide franchise process on Salesforce with ERP, Payoo payment and a Mobile App.</p>
-    <ul>
-      <li><strong>Led a 5-member team through 24 consecutive sprints</strong>, keeping delivery on schedule and architecture sound</li>
-      <li>Built the Solution Architecture for a multi-module CRM: Sales, Training, Loyalty, Portal/Mobile</li>
-      <li>Wrote the TDD and Interface Map for CRM – ERP, Website and Payoo integrations</li>
-      <li>Defined the Omni-Channel architecture (Live Chat, Facebook, WhatsApp, Zalo); released the Mobile App to the stores</li>
+      <li>Wrote the TDD for Lead → Opportunity → Application → Approval → Payment → Membership</li>
+      <li><strong>Led a team of 2 developers</strong>, reviewing solutions and code to keep quality and architecture consistent</li>
     </ul>
   </div>
 
@@ -195,7 +197,18 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
 
 <!-- ================= PAGE 2 ================= -->
 <div class="page">
-  <h2 style="margin-top:4px">Professional Experience (continued)</h2>
+  <h2 style="margin-top:4px">Omn1 Solution — Projects (continued)</h2>
+
+  <div class="job">
+    <div class="job-head"><h3>Trung Nguyên — Franchisee Platform</h3><span class="tag lead">Tech Lead</span><span class="time">11/2025</span></div>
+    <p class="ctx">Digitized the nationwide franchise process on Salesforce with ERP, Payoo payment and a Mobile App.</p>
+    <ul>
+      <li><strong>Led a 5-member team through 24 consecutive sprints</strong>, delivering on schedule</li>
+      <li>Built the Solution Architecture for a multi-module CRM: Sales, Training, Loyalty, Portal/Mobile</li>
+      <li>Wrote the TDD and Interface Map for CRM – ERP, Website and Payoo integrations</li>
+      <li>Defined the Omni-Channel architecture (Live Chat, Facebook, WhatsApp, Zalo); released the app</li>
+    </ul>
+  </div>
 
   <div class="job">
     <div class="job-head"><h3>Bin Group — DNBC Financial CRM</h3><span class="tag">Salesforce Developer</span><span class="time">05/2025</span></div>
@@ -203,7 +216,6 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
     <ul>
       <li>Configured financial objects: Financial Account, Transaction, Card, Account Balance, Branch Unit</li>
       <li>Developed the Website Integration and Internal Payment integration flows</li>
-      <li>Implemented Email Template and PDF Template management on the CRM</li>
     </ul>
   </div>
 
@@ -212,9 +224,7 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
     <p class="ctx">International incorporation and consulting firm automating its customer lifecycle and global marketing.</p>
     <ul>
       <li>Developed Apex classes and test classes for core CRM business flows</li>
-      <li>Built Lead, Opportunity, Account, Work Order and Client Portal modules</li>
-      <li>Integrated Omni-Channel (WhatsApp, Website), ERP and Payment into the Work Order flow</li>
-      <li>Designed Permission Sets for role-based access (Finance, ATA team)</li>
+      <li>Built Lead, Opportunity, Account, Work Order and Client Portal modules; integrated Omni-Channel (WhatsApp, Website), ERP and Payment</li>
     </ul>
   </div>
 
@@ -222,10 +232,8 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
     <div class="job-head"><h3>RT Holding — Education Ecosystem (IED)</h3><span class="tag">Salesforce / Mobile Developer</span><span class="time">2023</span></div>
     <p class="ctx">Salesforce CRM plus a multi-platform app for parents, teachers and schools.</p>
     <ul>
-      <li>Developed the Mobile App (P.Portal, SPS360): attendance, timetable, results, weekly reports</li>
-      <li>Integrated Firebase Push Notifications for real-time alerts</li>
+      <li>Developed the Mobile App (P.Portal, SPS360) with Firebase push notifications: attendance, timetable, results, reports</li>
       <li>Proficient in building apps and submitting them to the stores (App Store, Google Play)</li>
-      <li>Built dynamic PDFs (TOSI Transcript, Provincial Report Card)</li>
       <li>Integrated FPT e-contract and automated Payment Milestone processing on the CRM</li>
     </ul>
   </div>
@@ -235,8 +243,17 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
     <p class="ctx">Real-estate group equipping its sales force with a mobile app connected to Salesforce.</p>
     <ul>
       <li>Built the full Mobile App UI (iOS/Android/iPad): customers, appointments, contracts, projects, unit cart</li>
-      <li>Developed Heroku APIs for appointments, CRM data sync and email OTP</li>
-      <li>Integrated AWS S3 for file management and Cloudflare for security</li>
+      <li>Developed Heroku APIs for appointments, CRM data sync and email OTP; integrated AWS S3 and Cloudflare</li>
+    </ul>
+  </div>
+
+  <div class="employer" style="margin-top:6px"><h3>TMA Solutions</h3><span class="title">Mobile Developer</span><span class="time">2020 – 2023</span></div>
+  <div class="job">
+    <div class="job-head"><h3>AGI Drive — Mobile App</h3><span class="tag">Mobile Developer</span></div>
+    <p class="ctx">Mobile app recording the work of drivers in Australia: working/rest hours and load carried per trip.</p>
+    <ul>
+      <li>Developed the app in Java; built features to record and manage drivers' working and rest hours</li>
+      <li>Developed tare-weight and payload calculations for the materials being carried</li>
     </ul>
   </div>
 
@@ -260,8 +277,6 @@ footer{position:absolute;bottom:7mm;left:15mm;right:15mm;font-size:7.6pt;color:v
         <div class="row"><span>Vietnamese</span><span>Native</span></div>
         <div class="row"><span>English</span><span>Professional working</span></div>
       </div>
-      <h2>Industries</h2>
-      <p>Manufacturing · Retail · Real Estate · Finance &amp; Banking · Education</p>
     </div>
   </div>
 
