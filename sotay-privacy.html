@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Chính sách quyền riêng tư — Sổ tay kiến thức | Huỳnh Long Hồ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chính sách quyền riêng tư của ứng dụng Sổ tay kiến thức (com.hlh.overview_subject). Privacy policy of the Sổ tay kiến thức app.">
+<link rel="icon" href="img/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1020;
+  --bg-soft:#101731;
+  --card:#141d3b;
+  --card-hover:#182246;
+  --line:rgba(139,168,255,.14);
+  --text:#e8edfb;
+  --muted:#9aa7cc;
+  --accent:#5b8cff;
+  --accent-2:#38d0c4;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Be Vietnam Pro',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+::selection{background:var(--accent);color:#fff}
+
+body[data-lang="vi"] [lang="en"]{display:none !important}
+body[data-lang="en"] [lang="vi"]{display:none !important}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:860px;margin:0 auto;padding:0 24px}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  backdrop-filter:blur(14px);
+  background:rgba(11,16,32,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1080px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;gap:20px;
+}
+.brand{font-weight:800;font-size:1.05rem;color:var(--text);letter-spacing:.3px}
+.brand span{color:var(--accent)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.back-link{color:var(--muted);font-size:.9rem;font-weight:500;transition:color .2s}
+.back-link:hover{color:var(--text);text-decoration:none}
+.lang-switch{
+  display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;
+  font-size:.78rem;font-weight:700;
+}
+.lang-switch button{
+  border:0;background:transparent;color:var(--muted);
+  padding:6px 14px;cursor:pointer;font:inherit;transition:.2s;
+}
+.lang-switch button.active{background:var(--accent);color:#fff}
+
+header{
+  padding:150px 0 70px;text-align:center;
+  background:
+    radial-gradient(600px 320px at 50% 0%,rgba(91,140,255,.15),transparent 70%),
+    var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.kicker{
+  font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent-2);
+  letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:14px;
+}
+header h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.5px;margin-bottom:16px}
+header .intro{color:var(--muted);max-width:640px;margin:0 auto;font-size:1.02rem}
+.updated{display:block;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent-2)}
+
+main{padding:64px 0 80px}
+.policy-list{display:flex;flex-direction:column;gap:18px}
+.policy-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;display:flex;gap:20px;align-items:flex-start;
+  transition:.25s;
+}
+.policy-card:hover{border-color:rgba(91,140,255,.4);background:var(--card-hover)}
+.policy-card .ic{
+  width:46px;height:46px;flex:0 0 46px;border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;font-size:1.25rem;
+  box-shadow:0 8px 20px rgba(91,140,255,.3);
+}
+.policy-card h2{font-size:1.05rem;font-weight:700;margin-bottom:6px}
+.policy-card p,.policy-card li{color:var(--muted);font-size:.95rem}
+.policy-card p + p,.policy-card p + ul,.policy-card ul + p{margin-top:8px}
+.policy-card ul{padding-left:20px}
+.policy-card li{margin-top:4px}
+.policy-card b{color:var(--text);font-weight:600}
+
+.closing{
+  margin-top:36px;padding:26px 28px;text-align:center;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);
+  color:var(--muted);font-size:.98rem;
+}
+
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
+footer b{color:var(--text)}
+
+@media(max-width:640px){
+  header{padding:130px 0 54px}
+  .policy-card{flex-direction:column;gap:14px;padding:22px 20px}
+  main{padding:48px 0 60px}
+  .nav-inner{padding:12px 16px;gap:12px}
+  .container{padding:0 16px}
+}
+</style>
+</head>
+<body data-lang="vi">
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Huỳnh Long <span>Hồ</span></a>
+    <div class="nav-right">
+      <a class="back-link" href="index.html">← <span lang="vi">Về trang chủ</span><span lang="en">Back to home</span></a>
+      <div class="lang-switch">
+        <button id="btnVi" onclick="setLang('vi')">VI</button>
+        <button id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <span class="kicker">Privacy Policy · com.hlh.overview_subject</span>
+    <h1><span lang="vi">Chính sách quyền riêng tư — Sổ tay kiến thức</span><span lang="en">Privacy Policy — Sổ tay kiến thức</span></h1>
+    <p class="intro">
+      <span lang="vi">Chính sách này áp dụng cho ứng dụng Android <b>Sổ tay kiến thức</b> (mã gói <b>com.hlh.overview_subject</b>) do Huỳnh Long Hồ phát triển. Trang này giải thích ứng dụng xử lý những dữ liệu nào, vì sao, và bạn có những quyền gì.</span>
+      <span lang="en">This policy applies to the Android app <b>Sổ tay kiến thức</b> (package <b>com.hlh.overview_subject</b>) developed by Huỳnh Long Hồ. It explains what data the app handles, why, and what choices you have.</span>
+      <span class="updated"><span lang="vi">Cập nhật: 01/11/2026</span><span lang="en">Last updated: November 1, 2026</span></span>
+    </p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="policy-list">
+
+      <div class="policy-card">
+        <div class="ic">📚</div>
+        <div>
+          <h2><span lang="vi">Xem kiến thức không cần tài khoản</span><span lang="en">Browsing content needs no account</span></h2>
+          <p lang="vi">Nội dung công thức, kiến thức theo môn và lớp được tải từ máy chủ tĩnh <b>hlongho.github.io</b> (GitHub Pages). Khi tải, máy chủ chỉ nhận các thông tin kỹ thuật thông thường của một yêu cầu web (như địa chỉ IP), do GitHub xử lý theo <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Tuyên bố quyền riêng tư của GitHub</a>. Chúng tôi không dùng các thông tin này để nhận diện bạn.</p>
+          <p lang="en">Formulas and knowledge by subject and grade are loaded from the static server <b>hlongho.github.io</b> (GitHub Pages). Loading them only sends the usual technical details of a web request (such as IP address), handled by GitHub under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a>. We do not use this to identify you.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">👤</div>
+        <div>
+          <h2><span lang="vi">Tài khoản và ghi chú</span><span lang="en">Account and notes</span></h2>
+          <p lang="vi">Tính năng <b>Ghi chú</b> cần đăng ký tài khoản. Khi đó ứng dụng xử lý:</p>
+          <ul lang="vi">
+            <li><b>Số điện thoại và mật khẩu</b> bạn đặt: dùng làm thông tin đăng nhập. Số điện thoại không dùng để gọi, nhắn tin hay quảng cáo.</li>
+            <li><b>Ghi chú</b> bạn tạo (tiêu đề, ngày, nội dung): gắn với tài khoản để bạn xem lại trên máy khác.</li>
+          </ul>
+          <p lang="en">The <b>Notes</b> feature requires an account. The app then handles:</p>
+          <ul lang="en">
+            <li>The <b>phone number and password</b> you choose: used as your login. The phone number is never used for calls, messages or marketing.</li>
+            <li>The <b>notes</b> you create (title, date, content): linked to your account so you can see them on other devices.</li>
+          </ul>
+          <p lang="vi">Dữ liệu này được lưu trên <b>Google Cloud Firestore</b> (dịch vụ Firebase của Google) và truyền qua kết nối mã hoá HTTPS. Thông tin đăng nhập cũng được lưu trên điện thoại để bạn không phải đăng nhập lại, và bị xoá khi bạn đăng xuất. Chúng tôi không bán, không chia sẻ dữ liệu này với bên thứ ba và không dùng cho quảng cáo.</p>
+          <p lang="en">This data is stored in <b>Google Cloud Firestore</b> (Google's Firebase service) and sent over encrypted HTTPS. Login details are also kept on your phone so you stay signed in, and are removed when you log out. We do not sell or share this data with third parties and do not use it for advertising.</p>
+        </div>
+      </div>
+
+      <div class="policy-card" id="xoa-tai-khoan">
+        <div class="ic">🗑️</div>
+        <div>
+          <h2><span lang="vi">Xoá ghi chú và tài khoản</span><span lang="en">Deleting notes and your account</span></h2>
+          <ul lang="vi">
+            <li>Xoá từng ghi chú ngay trong mục Ghi chú; ghi chú bị xoá khỏi máy chủ ngay lập tức.</li>
+            <li>Xoá tài khoản: vào <b>Hồ sơ → Xoá tài khoản</b>. Thông tin đăng nhập (số điện thoại, mật khẩu) bị xoá khỏi máy chủ ngay.</li>
+            <li>Để xoá luôn mọi ghi chú, hãy xoá ghi chú trước khi xoá tài khoản, hoặc gửi email tới địa chỉ bên dưới kèm số điện thoại đã đăng ký. Chúng tôi sẽ xoá toàn bộ tài khoản và ghi chú trong vòng 30 ngày, kể cả khi bạn đã gỡ ứng dụng.</li>
+          </ul>
+          <ul lang="en">
+            <li>Delete any note directly in Notes; it is removed from the server immediately.</li>
+            <li>Delete your account in <b>Profile → Delete account</b>. Your login details (phone number, password) are removed from the server immediately.</li>
+            <li>To remove all notes as well, delete them before deleting the account, or email us at the address below with your registered phone number. We will delete the account and all notes within 30 days, even if you have uninstalled the app.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">🚫</div>
+        <div>
+          <h2><span lang="vi">Không quảng cáo, không theo dõi</span><span lang="en">No ads, no tracking</span></h2>
+          <p lang="vi">Ứng dụng không hiển thị quảng cáo, không dùng mã nhận dạng quảng cáo và không tích hợp công cụ phân tích hay theo dõi hành vi. Ứng dụng chỉ dùng quyền truy cập Internet; không truy cập danh bạ, vị trí, ảnh, camera, micro hay tệp của bạn.</p>
+          <p lang="en">The app shows no ads, does not use the advertising ID and includes no analytics or behaviour tracking. It only uses Internet access; it does not access your contacts, location, photos, camera, microphone or files.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">🧒</div>
+        <div>
+          <h2><span lang="vi">Trẻ em</span><span lang="en">Children</span></h2>
+          <p lang="vi">Ứng dụng không hướng tới trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập dữ liệu của trẻ em. Nếu bạn biết một trẻ em đã tạo tài khoản, hãy liên hệ để chúng tôi xoá.</p>
+          <p lang="en">The app is not directed at children under 13 and we do not knowingly collect data from children. If you believe a child has created an account, contact us and we will delete it.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">⚖️</div>
+        <div>
+          <h2><span lang="vi">Quyền của bạn</span><span lang="en">Your rights</span></h2>
+          <p lang="vi">Bạn có thể xem, sửa và xoá ghi chú trong ứng dụng, và yêu cầu nhận bản sao hoặc xoá toàn bộ dữ liệu tài khoản qua email bên dưới. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+          <p lang="en">You can view, edit and delete notes in the app, and request a copy or deletion of all account data by emailing us below. We will respond as soon as possible.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">📝</div>
+        <div>
+          <h2><span lang="vi">Thay đổi chính sách</span><span lang="en">Changes to this policy</span></h2>
+          <p lang="vi">Khi ứng dụng thay đổi cách xử lý dữ liệu, chúng tôi sẽ cập nhật trang này và ngày “Cập nhật” ở đầu trang.</p>
+          <p lang="en">If the app changes how it handles data, we will update this page and the “Last updated” date at the top.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="closing">
+      <span lang="vi">Mọi thắc mắc về quyền riêng tư, xin liên hệ:</span>
+      <span lang="en">For any privacy questions, please contact:</span>
+      <a href="mailto:longho4697@gmail.com">longho4697@gmail.com</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 <b>Huỳnh Long Hồ</b> ·
+    <a href="about.html"><span lang="vi">Chính sách chung</span><span lang="en">General policy</span></a> ·
+    <a href="index.html"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+  </div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang;
+  document.getElementById('btnVi').classList.toggle('active', lang==='vi');
+  document.getElementById('btnEn').classList.toggle('active', lang==='en');
+  try{ localStorage.setItem('lang', lang); }catch(e){}
+}
+setLang((function(){
+  try{ var s = new URLSearchParams(location.search).get('lang'); if(s==='vi'||s==='en') return s; }catch(e){}
+  try{ var s2 = localStorage.getItem('lang'); if(s2==='vi'||s2==='en') return s2; }catch(e){}
+  return (navigator.language||'vi').toLowerCase().startsWith('vi') ? 'vi' : 'en';
+})());
+</script>
+</body>
+</html>
