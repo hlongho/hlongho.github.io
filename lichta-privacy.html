@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Chính sách quyền riêng tư — Lịch Ta | Huỳnh Long Hồ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chính sách quyền riêng tư của ứng dụng Lịch Ta: Lịch Âm & Vạn Niên (com.hlh.amlich). Privacy policy of the Lịch Ta app.">
+<link rel="icon" href="img/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1020;
+  --bg-soft:#101731;
+  --card:#141d3b;
+  --card-hover:#182246;
+  --line:rgba(139,168,255,.14);
+  --text:#e8edfb;
+  --muted:#9aa7cc;
+  --accent:#5b8cff;
+  --accent-2:#38d0c4;
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Be Vietnam Pro',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+::selection{background:var(--accent);color:#fff}
+
+body[data-lang="vi"] [lang="en"]{display:none !important}
+body[data-lang="en"] [lang="vi"]{display:none !important}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:860px;margin:0 auto;padding:0 24px}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  backdrop-filter:blur(14px);
+  background:rgba(11,16,32,.82);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1080px;margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;gap:20px;
+}
+.brand{font-weight:800;font-size:1.05rem;color:var(--text);letter-spacing:.3px}
+.brand span{color:var(--accent)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.back-link{color:var(--muted);font-size:.9rem;font-weight:500;transition:color .2s}
+.back-link:hover{color:var(--text);text-decoration:none}
+.lang-switch{
+  display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;
+  font-size:.78rem;font-weight:700;
+}
+.lang-switch button{
+  border:0;background:transparent;color:var(--muted);
+  padding:6px 14px;cursor:pointer;font:inherit;transition:.2s;
+}
+.lang-switch button.active{background:var(--accent);color:#fff}
+
+header{
+  padding:150px 0 70px;text-align:center;
+  background:
+    radial-gradient(600px 320px at 50% 0%,rgba(91,140,255,.15),transparent 70%),
+    var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.kicker{
+  font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent-2);
+  letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:14px;
+}
+header h1{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;letter-spacing:-.5px;margin-bottom:16px}
+header .intro{color:var(--muted);max-width:640px;margin:0 auto;font-size:1.02rem}
+.updated{display:block;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--accent-2)}
+
+main{padding:64px 0 80px}
+.policy-list{display:flex;flex-direction:column;gap:18px}
+.policy-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;display:flex;gap:20px;align-items:flex-start;
+  transition:.25s;
+}
+.policy-card:hover{border-color:rgba(91,140,255,.4);background:var(--card-hover)}
+.policy-card .ic{
+  width:46px;height:46px;flex:0 0 46px;border-radius:13px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;font-size:1.25rem;
+  box-shadow:0 8px 20px rgba(91,140,255,.3);
+}
+.policy-card h2{font-size:1.05rem;font-weight:700;margin-bottom:6px}
+.policy-card p,.policy-card li{color:var(--muted);font-size:.95rem}
+.policy-card p + p,.policy-card p + ul,.policy-card ul + p{margin-top:8px}
+.policy-card ul{padding-left:20px}
+.policy-card li{margin-top:4px}
+.policy-card b{color:var(--text);font-weight:600}
+
+.closing{
+  margin-top:36px;padding:26px 28px;text-align:center;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);
+  color:var(--muted);font-size:.98rem;
+}
+
+footer{padding:30px 0;text-align:center;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
+footer b{color:var(--text)}
+
+@media(max-width:640px){
+  header{padding:130px 0 54px}
+  .policy-card{flex-direction:column;gap:14px;padding:22px 20px}
+  main{padding:48px 0 60px}
+  .nav-inner{padding:12px 16px;gap:12px}
+  .container{padding:0 16px}
+}
+</style>
+</head>
+<body data-lang="vi">
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Huỳnh Long <span>Hồ</span></a>
+    <div class="nav-right">
+      <a class="back-link" href="index.html">← <span lang="vi">Về trang chủ</span><span lang="en">Back to home</span></a>
+      <div class="lang-switch">
+        <button id="btnVi" onclick="setLang('vi')">VI</button>
+        <button id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container">
+    <span class="kicker">Privacy Policy · com.hlh.amlich</span>
+    <h1><span lang="vi">Chính sách quyền riêng tư — Lịch Ta</span><span lang="en">Privacy Policy — Lịch Ta</span></h1>
+    <p class="intro">
+      <span lang="vi">Chính sách này áp dụng cho ứng dụng Android <b>Lịch Ta: Lịch Âm &amp; Vạn Niên</b> (mã gói <b>com.hlh.amlich</b>) do Huỳnh Long Hồ phát triển. Trang này giải thích ứng dụng xử lý những dữ liệu nào, vì sao, và bạn có những quyền gì.</span>
+      <span lang="en">This policy applies to the Android app <b>Lịch Ta: Lịch Âm &amp; Vạn Niên</b> (package <b>com.hlh.amlich</b>) developed by Huỳnh Long Hồ. It explains what data the app handles, why, and what choices you have.</span>
+      <span class="updated"><span lang="vi">Cập nhật: 01/11/2026</span><span lang="en">Last updated: November 1, 2026</span></span>
+    </p>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="policy-list">
+
+      <div class="policy-card">
+        <div class="ic">📱</div>
+        <div>
+          <h2><span lang="vi">Dữ liệu bạn nhập chỉ nằm trên điện thoại</span><span lang="en">Your data stays on your phone</span></h2>
+          <p lang="vi">Ứng dụng không yêu cầu tài khoản và không có máy chủ riêng. Mọi phép tính lịch âm, ngày lễ, đổi ngày và tính tuổi đều chạy ngay trên máy.</p>
+          <p lang="en">The app requires no account and has no server of its own. All lunar calendar, holiday, date conversion and age calculations run on your device.</p>
+          <ul lang="vi">
+            <li><b>Ghi chú</b> (ngày giỗ, cúng, hụi, sinh nhật…) và <b>cài đặt thông báo</b> được lưu trong bộ nhớ của ứng dụng trên điện thoại. Chúng tôi không thu thập và không truy cập được các dữ liệu này.</li>
+            <li><b>Ngày sinh</b> nhập ở mục Tính tuổi chỉ dùng để tính và hiển thị trên màn hình, không được lưu lại, trừ khi bạn chủ động bấm “Lưu sinh nhật” để tạo ghi chú.</li>
+            <li>Bạn có thể xoá từng ghi chú trong ứng dụng; toàn bộ dữ liệu bị xoá khi gỡ ứng dụng.</li>
+            <li>Nếu bạn bật sao lưu Google trên điện thoại, Android có thể tự sao lưu dữ liệu ứng dụng vào tài khoản Google của bạn theo <a href="https://support.google.com/android/answer/2819582" target="_blank" rel="noopener">cơ chế sao lưu của Google</a>. Chúng tôi không truy cập được bản sao lưu này.</li>
+          </ul>
+          <ul lang="en">
+            <li><b>Notes</b> (memorial days, offerings, savings groups, birthdays…) and <b>notification settings</b> are stored in the app's storage on your phone. We do not collect them and cannot access them.</li>
+            <li>A <b>birth date</b> entered in the Age tab is only used to calculate and display results on screen and is not saved, unless you tap “Save birthday” to create a note.</li>
+            <li>You can delete any note in the app; all data is removed when you uninstall the app.</li>
+            <li>If Google backup is enabled on your phone, Android may back up app data to your own Google account under <a href="https://support.google.com/android/answer/2819582" target="_blank" rel="noopener">Google's backup service</a>. We cannot access that backup.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">📢</div>
+        <div>
+          <h2><span lang="vi">Quảng cáo (Google AdMob)</span><span lang="en">Advertising (Google AdMob)</span></h2>
+          <p lang="vi">Ứng dụng miễn phí và hiển thị quảng cáo banner do <b>Google AdMob</b> cung cấp. Để hiển thị và đo lường quảng cáo, SDK Google Mobile Ads có thể tự động thu thập:</p>
+          <p lang="en">The app is free and shows banner ads provided by <b>Google AdMob</b>. To serve and measure ads, the Google Mobile Ads SDK may automatically collect:</p>
+          <ul lang="vi">
+            <li>Mã nhận dạng quảng cáo (Advertising ID) và các mã nhận dạng thiết bị khác</li>
+            <li>Địa chỉ IP và vị trí ước chừng suy ra từ địa chỉ IP</li>
+            <li>Thông tin thiết bị (kiểu máy, phiên bản Android, ngôn ngữ)</li>
+            <li>Tương tác với quảng cáo (lượt xem, lượt nhấn) và dữ liệu chẩn đoán</li>
+          </ul>
+          <ul lang="en">
+            <li>The advertising ID and other device identifiers</li>
+            <li>IP address and approximate location derived from it</li>
+            <li>Device information (model, Android version, language)</li>
+            <li>Ad interactions (views, taps) and diagnostic data</li>
+          </ul>
+          <p lang="vi">Dữ liệu này được Google thu thập và xử lý để hiển thị quảng cáo (có thể được cá nhân hoá), đo lường hiệu quả và chống gian lận, theo <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Google</a> và <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">cách Google sử dụng dữ liệu từ ứng dụng đối tác</a>. Dữ liệu được truyền qua kết nối mã hoá. Chúng tôi không nhận dữ liệu cá nhân của bạn từ Google và không bán dữ liệu cho bất kỳ ai.</p>
+          <p lang="en">This data is collected and processed by Google to serve ads (which may be personalized), measure performance and prevent fraud, under the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>. Data is transmitted over an encrypted connection. We do not receive your personal data from Google and we do not sell data to anyone.</p>
+          <p lang="vi"><b>Lựa chọn của bạn:</b> tắt quảng cáo cá nhân hoá hoặc xoá mã nhận dạng quảng cáo trong <b>Cài đặt Android → Quyền riêng tư (hoặc Google) → Quảng cáo</b>. Người dùng ở khu vực có quy định riêng (ví dụ EU, Vương quốc Anh) sẽ được hỏi ý kiến trước khi tải quảng cáo và có thể đổi lựa chọn trong mục Cài đặt của ứng dụng.</p>
+          <p lang="en"><b>Your choices:</b> opt out of personalized ads or delete your advertising ID in <b>Android Settings → Privacy (or Google) → Ads</b>. Users in regions with specific rules (e.g. the EU, the UK) are asked for consent before ads load and can change their choice in the app's Settings.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">🔐</div>
+        <div>
+          <h2><span lang="vi">Quyền ứng dụng sử dụng</span><span lang="en">Permissions the app uses</span></h2>
+          <ul lang="vi">
+            <li><b>Thông báo</b>: nhắc mùng 1, rằm, ngày lễ và các ngày bạn đã ghi chú.</li>
+            <li><b>Báo thức chính xác</b>: cập nhật biểu tượng ứng dụng và tiện ích màn hình chính đúng lúc nửa đêm.</li>
+            <li><b>Chạy khi khởi động máy</b>: khôi phục lịch nhắc sau khi điện thoại khởi động lại.</li>
+            <li><b>Rung</b>: rung khi có thông báo.</li>
+            <li><b>Truy cập Internet, trạng thái mạng</b> và <b>mã nhận dạng quảng cáo</b>: chỉ để tải và đo lường quảng cáo AdMob.</li>
+          </ul>
+          <ul lang="en">
+            <li><b>Notifications</b>: reminders for the 1st and 15th lunar days, holidays and your notes.</li>
+            <li><b>Exact alarms</b>: update the app icon and home-screen widget right at midnight.</li>
+            <li><b>Run at startup</b>: restore reminders after the phone restarts.</li>
+            <li><b>Vibrate</b>: vibrate for notifications.</li>
+            <li><b>Internet, network state</b> and <b>advertising ID</b>: only to load and measure AdMob ads.</li>
+          </ul>
+          <p lang="vi">Ứng dụng không truy cập danh bạ, vị trí GPS, ảnh, camera, micro hay tệp của bạn.</p>
+          <p lang="en">The app does not access your contacts, GPS location, photos, camera, microphone or files.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">🧒</div>
+        <div>
+          <h2><span lang="vi">Trẻ em</span><span lang="en">Children</span></h2>
+          <p lang="vi">Ứng dụng dành cho người dùng từ 18 tuổi trở lên, không hướng tới trẻ em và chúng tôi không cố ý thu thập dữ liệu của trẻ em.</p>
+          <p lang="en">The app is intended for users aged 18 and over, is not directed at children, and we do not knowingly collect data from children.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">⚖️</div>
+        <div>
+          <h2><span lang="vi">Quyền của bạn</span><span lang="en">Your rights</span></h2>
+          <p lang="vi">Vì dữ liệu bạn nhập chỉ nằm trên điện thoại, bạn toàn quyền xem, sửa và xoá dữ liệu đó ngay trong ứng dụng. Với dữ liệu quảng cáo, bạn có thể dùng các lựa chọn ở mục Quảng cáo phía trên hoặc liên hệ Google. Nếu có câu hỏi hay yêu cầu liên quan đến dữ liệu cá nhân, vui lòng liên hệ chúng tôi qua email bên dưới; chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+          <p lang="en">Because the data you enter stays on your phone, you can view, edit and delete it directly in the app. For advertising data, use the choices in the Advertising section above or contact Google. For any question or request about personal data, please email us below and we will respond as soon as possible.</p>
+        </div>
+      </div>
+
+      <div class="policy-card">
+        <div class="ic">📝</div>
+        <div>
+          <h2><span lang="vi">Thay đổi chính sách</span><span lang="en">Changes to this policy</span></h2>
+          <p lang="vi">Khi ứng dụng thay đổi cách xử lý dữ liệu, chúng tôi sẽ cập nhật trang này và ngày “Cập nhật” ở đầu trang.</p>
+          <p lang="en">If the app changes how it handles data, we will update this page and the “Last updated” date at the top.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="closing">
+      <span lang="vi">Mọi thắc mắc về quyền riêng tư, xin liên hệ:</span>
+      <span lang="en">For any privacy questions, please contact:</span>
+      <a href="mailto:longho4697@gmail.com">longho4697@gmail.com</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 <b>Huỳnh Long Hồ</b> ·
+    <a href="about.html"><span lang="vi">Chính sách chung</span><span lang="en">General policy</span></a> ·
+    <a href="index.html"><span lang="vi">Trang chủ</span><span lang="en">Home</span></a>
+  </div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.body.dataset.lang = lang;
+  document.documentElement.lang = lang;
+  document.getElementById('btnVi').classList.toggle('active', lang==='vi');
+  document.getElementById('btnEn').classList.toggle('active', lang==='en');
+  try{ localStorage.setItem('lang', lang); }catch(e){}
+}
+setLang((function(){
+  try{ var s = new URLSearchParams(location.search).get('lang'); if(s==='vi'||s==='en') return s; }catch(e){}
+  try{ var s2 = localStorage.getItem('lang'); if(s2==='vi'||s2==='en') return s2; }catch(e){}
+  return (navigator.language||'vi').toLowerCase().startsWith('vi') ? 'vi' : 'en';
+})());
+</script>
+</body>
+</html>
