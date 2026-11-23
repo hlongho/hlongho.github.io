@@ -37,8 +37,8 @@ a{color:var(--accent);text-decoration:none}
 }
 @media print{
   body{background:#fff}
-  .page{margin:0;box-shadow:none;break-after:page;min-height:0;height:296mm;overflow:hidden}
-  .page:last-of-type{break-after:auto}
+  .page{margin:0;box-shadow:none;min-height:0;height:296mm;overflow:hidden;break-after:auto;page-break-after:auto}
+  .page + .page{break-before:page;page-break-before:always}
 }
 
 /* header */
